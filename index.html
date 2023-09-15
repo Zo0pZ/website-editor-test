@@ -12,7 +12,11 @@
 <link rel="stylesheet" href="./Canada Life_files/bootstrap.min.css">
 <link rel="stylesheet" href="./Canada Life_files/wireframe.css">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-
+ <style>
+	#searchBox {
+		display: none;
+	}
+</style>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
 <script>
       $(function() {
@@ -43,14 +47,32 @@
       <div class="row">
         <div class="col-12">
           <ul class="nav justify-content-end mr-4 life">
-            <li class="nav-item"> <a class="nav-link nav-separator nav-life" href="#"> Contact us </a> </li>
-            <li class="nav-item"> <a class="nav-link nav-separator nav-life" href="#"> Register / Login </a> </li>
-            <li class="nav-item"> <a class="nav-link nav-life" href="#">Search</a> </li>
+            <li class="nav-item"> <a class="nav-link nav-separator nav-life" href="#">Contact us </a> </li>
+            <li class="nav-item"> <a class="nav-link nav-separator nav-life" href="#">Register / Login </a> </li>
+             <ul>
+        <li class="nav-item">
+            <a class="nav-link nav-life" href="#" onclick="toggleSearchBox()"><img src="img/search.png" width="45" height="40" alt=""/></a>
+        </li>
+    </ul>
+    <div id="searchBox">
+        <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+    <script>
+        function toggleSearchBox() {
+            var searchBox = document.getElementById("searchBox");
+            if (searchBox.style.display === "none") {
+                searchBox.style.display = "block";
+                document.getElementById("searchInput").focus();
+            } else {
+                searchBox.style.display = "none";
+            }
+        }
+    </script>
           </ul>
         </div>
       </div>
       <div class="row">
-        <div class="col-2"> <a class="text-muted" href="#"> <img alt="logo" src="./Canada Life_files/logo.png" width="120px"> </a> </div>
+        <div class="col-2"> <a class="text-muted" href="#"> <img alt="logo" src="https://www.canadalife.co.uk/media/tgjfenu4/canadalife_tm_rgb.svg?anchor=center&mode=crop&rnd=133281803931570000" width="200px"> </a> </div>
         <div class="col-10">
           <ul class="nav justify-content-end align-items-center life">
             <li class="nav-item"> <a class="nav-link" href="#">Getting started</a> </li>
@@ -66,13 +88,13 @@
     <br>
     <!-- Image header -->
     <div class="row border no-gutters">
-      <div class="col-6 bg-secondary">
-        <img alt="image placeholder" class="img-responsive" src="https://via.placeholder.com/555x325.png/6c757d/fff"/>
-      </div>
-      <div class="col-6 p-4">
-        <h1 class="display-4"> <strong>Group Life Insurance</strong> </h1>
+		<div class="col-6 p-4">
+        <h1 class="display-4"> <strong>Group Loaf Insurance</strong> </h1>
         <p class="lead my-3"> Protecting businesses and employees from the effects of long-term
           illness and injury </p>
+      </div>
+      <div class="col-6 bg-secondary">
+        <img alt="image placeholder" class="img-responsive" src="img/autumn-2182010.jpg"/>
       </div>
     </div>
   </div>
@@ -81,7 +103,7 @@
 <div class="nav-scroller sticky-top bg-white">
   <ul class="nav nav-tabs d-flex justify-content-center">
     <li class="tabbed active"><a data-toggle="tab" href="#glance">At a glance</a></li>
-    <li class="tabbed"><a data-toggle="tab" href="#detail">Product detail</a></li>
+    <li class="tabbed"><a data-toggle="tab" href="#detail">Prooduct detail</a></li>
     <li class="tabbed"><a data-toggle="tab" href="#story">Customer stories</a></li>
     <li class="tabbed"><a data-toggle="tab" href="#claim">Claims</a></li>
     <li class="tabbed"><a data-toggle="tab" href="#adviser">Adviser resources</a></li>
@@ -102,24 +124,29 @@
           <p>&nbsp;</p>
           <div class="col-12">
             <div class="key-benefits">
-              <h3>Key benefits</h3>
+              <h3>Key ben fits</h3>
               <div class="col-4"> <span><i class="fas fa-umbrella"></i></span>
+                <p>&nbsp;</p>
                 <p>Cover is available for groups of two or more employees - At a low cost</p>
               </div>
               <div class="col-4"> <span><i class="fas fa-cash-register"></i></span>
+                <p>&nbsp;</p>
                 <p>Tax efficient for businesses, classed as Tax-free benefits in most circumstances</p>
               </div>
               <div class="col-4"> <span><i class="fas fa-fast-forward"></i></span>
-                <p>We paid 99.8% of claims in 2018<br>
+                <p>&nbsp;</p>
+                <p>We paid 100%* of claims in 2023<br>
                   Fast turnaround, Easy to set up.</p>
               </div>
+				<p><br></p>
+				<p><span class="smallerText">*This isn't correct, but shhh we'll hide it in really small text so customers cant see it.</span></p>
             </div>
           </div>
           <p>&nbsp;</p>
           <div class="col-12">
-            <h3>Introduction to Group Life Insurance</h3>
+            <h3>Introduction to Groupie Life Insurance</h3>
             <div class="video-container">
-              <iframe width="653" height="367" src="https://www.youtube.com/embed/EBDEUojwS0o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="1020" height="630" src="https://www.youtube.com/embed/wX89Rk5pr6A?si=D7xruH6dpjivAv43" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
           <p>&nbsp;</p>
@@ -140,7 +167,7 @@
               </ul>
               <p>&nbsp;</p>
               <h3>Support Services included</h3>
-              <p>The following support services are provided at no additional cost with our Group Life Insurance policy.</p>
+              <p>The following support services are provided for free with our Group Life Insurance policy.</p>
               <ul>
                 <li><span><strong>Bereavement Counselling</strong></span><br>
                   <span>24/7 unlimited access to a Bereavement Counselling helpline
@@ -155,18 +182,19 @@
             </div>
             <div class="col-4">
               <div class="content"> <span><i class="fas fa-phone"></i></span>
+				<p><img src="img/uximage1.png" width="330" height="280" alt=""/></p>
                 <h4 class="widget-heading">Any questions? Contact our Customer Service Centre.</h4>
                 <p>0345 223 8000</p>
                 <p>groupcsc@canadalife.co.uk</p>
                 <div class="button-container"> <a href="/contact-us?tab=Group%20Insurance" class="btn btn-large btn-primary"> Contact us <i class="fa fa-angle-right"></i> </a> </div>
               </div>
               <p>&nbsp;</p>
-              <p>&nbsp;</p>
-              <p>&nbsp;</p>
+
               <div class="content"> <span><i class="fas fa-calculator"></i></span>
                 <p>&nbsp;</p>
+                <img src="img/calculator.svg" height="50" width="" alt="scientific calculator"/>
                 <h4 class="widget-heading">Life Insurance Calculator</h4>
-                <p>&nbsp;</p>
+                <p>Our calculator will help work out how much life insurance you might need in just a few minutes, based on what you'll want to leave for your family, or the balance of your mortgage or other debts.&nbsp;</p>
                 <div class="button-container"> <a href="https://www.canadalife.co.uk/group-insurance/insurance-calculators/life-insurance-calculator" target="_blank" class="btn btn-large btn-primary"> Estimate your cover <i class="fa fa-angle-right" aria-hidden="true"></i> </a> </div>
               </div>
             </div>
@@ -702,15 +730,14 @@
             <div class="card rounded-0">
               <div class="card-body">
                 <h4 class="card-title">Let us help you find an Adviser.</h4>
-                <img alt="image placeholder" class="img-responsive" src="https://via.placeholder.com/300x150.png/6c757d/fff"/>
-                <p class="card-text mt-2"> Suspendisse non dapibus nulla. Suspendisse ullamcorper ex
-                  sit amet ligula faucibus cursus </p>
+                <img alt="image placeholder" class="img-responsive" src="https://via.placeholder.com/300x150.png/f2f2f2/fff"/>
+                <p class="card-text mt-2"> Most Canada Life products are designed to be sold to people who have received independent financial advice. </p>
               </div>
               <div class="card-footer bg-white" style="border-top:0"> <a href="#" class="btn btn-secondary btn-block rounded-0"> Find an Adviser </a> </div>
             </div>
             <div class="card rounded-0">
               <div class="card-body">
-                <h4 class="card-title">Existing customer</h4>
+                <h4 class="card-title">New customer</h4>
                 <p class="card-text"> Suspendisse non dapibus nulla. Suspendisse ullamcorper ex
                   sit amet ligula faucibus cursus call, </p>
                 <p class="card-text" style="letter-spacing: 1px; display: inline-block; font-size: 32px; transform: scaleY(1); margin-bottom: -50%;"> 0345 606 0708 </p>

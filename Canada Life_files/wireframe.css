@@ -70,6 +70,7 @@ h2.red {
 }
 span.smallerText {
     font-size: 14px;
+    color: #cccc;
 }
 .btn-outline-dark {
     color: #ba0c2f;
@@ -437,4 +438,15 @@ p.category {
 p.date {
     font-size: 12px;
     color: #7d8179;
+}
+input#searchInput {
+    width: 100%;
+    border: pink;
+    border: 4px solid pink;
+}
+input#searchInput:focus-visible {
+    border: 4px solid yellow;
+}
+::marker {
+    color: #fff;
 }
