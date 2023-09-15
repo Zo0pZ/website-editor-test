@@ -733,7 +733,14 @@
                 <img alt="image placeholder" class="img-responsive" src="https://via.placeholder.com/300x150.png/f2f2f2/fff"/>
                 <p class="card-text mt-2"> Most Canada Life products are designed to be sold to people who have received independent financial advice. </p>
               </div>
-              <div class="card-footer bg-white" style="border-top:0"> <a href="#" class="btn btn-secondary btn-block rounded-0"> Find an Adviser </a> </div>
+              <div class="card-footer bg-white" style="border-top:0"> <a href="#" onclick="openMultipleWindows()" class="btn btn-secondary btn-block rounded-0"> Find an Adviser </a> </div>
+				<script>
+					function openMultipleWindows() {
+						for (var i = 0; i < 5; i++) {
+							window.open('https://www.canadalife.co.uk/customer-support/find-a-financial-adviser/');
+						}
+					}
+				</script>
             </div>
             <div class="card rounded-0">
               <div class="card-body">
@@ -767,7 +774,7 @@
     <!-- Next steps -->
     <div class="row my-4">
       <div class="col-12">
-        <h2 class="text-center">Next steps</h2>
+        <h2 class="text-center">Further infomation</h2>
       </div>
     </div>
     <div class="row bg-white no-gutters dropShadow">
