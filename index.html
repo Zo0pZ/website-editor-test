@@ -17,7 +17,7 @@
 		display: none;
 	}
 </style>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+<script src="https://kit.fontawesome.com/23180b5da7.js" crossorigin="anonymous"></script>
 <script>
       $(function() {
         $("#sidebar-sticky-menu > ul > li > a[href^='#'], #button-top").on(
@@ -89,7 +89,7 @@
     <!-- Image header -->
     <div class="row border no-gutters">
 		<div class="col-6 p-4">
-        <h1 class="display-4"> <strong>Group Loaf Insurance</strong> </h1>
+        <h2 class="display-4"> <strong>Group Life Insurnce</strong> </h2>
         <p class="lead my-3"> Protecting businesses and employees from the effects of long-term
           illness and injury </p>
       </div>
@@ -106,9 +106,10 @@
     <li class="tabbed"><a data-toggle="tab" href="#detail">Prooduct detail</a></li>
     <li class="tabbed"><a data-toggle="tab" href="#story">Customer stories</a></li>
     <li class="tabbed"><a data-toggle="tab" href="#claim">Claims</a></li>
-    <li class="tabbed"><a data-toggle="tab" href="#adviser">Adviser resources</a></li>
+    <li id="adviserTab" class="tabbed"><a data-toggle="tab" href="#adviser">Adviser resources</a></li>
   </ul>
 </div>
+
 <div class="bg-medium-gray">
   <main class="container">
     <div class="row">
@@ -117,7 +118,7 @@
         
         <div id="glance" class="tab-pane fade active in">
           <div class="intro-container">
-            <h2>Group Life Insurance provides a tax-free lump sum and/or an ongoing income if an employee dies while covered by the policy.</h2>
+            <h1>Group Life Insurance provides a tax-free lump sum and/or an ongoing income if an employee dies while covered by the policy.</h1>
             <p>&nbsp;</p>
             <p>Group Life Insurance cover is cost-effective and simple to set up, it is also a highly valued benefit which provides a clear advantage in attracting and retaining top talent. Life can be unpredictable for businesses and people. If the worst happens, we aim to pay financial benefits as quickly as possible and provide emotional and legal support to assist during a difficult time.</p>
           </div>
@@ -125,15 +126,15 @@
           <div class="col-12">
             <div class="key-benefits">
               <h3>Key ben fits</h3>
-              <div class="col-4"> <span><i class="fas fa-umbrella"></i></span>
+              <div class="col-4"> <span><img width="80" height="80" src="img/management.svg" alt=""/></span>
                 <p>&nbsp;</p>
                 <p>Cover is available for groups of two or more employees - At a low cost</p>
               </div>
-              <div class="col-4"> <span><i class="fas fa-cash-register"></i></span>
+              <div class="col-4"> <span><img width="80" height="80" src="img/best-doctors.svg" alt=""/></span>
                 <p>&nbsp;</p>
                 <p>Tax efficient for businesses, classed as Tax-free benefits in most circumstances</p>
               </div>
-              <div class="col-4"> <span><i class="fas fa-fast-forward"></i></span>
+              <div class="col-4"> <span><img width="80" height="80" class="bounce2" src="img/money-bag.svg" alt=""/></span>
                 <p>&nbsp;</p>
                 <p>We paid 100%* of claims in 2023<br>
                   Fast turnaround, Easy to set up.</p>
@@ -192,7 +193,7 @@
 
               <div class="content"> <span><i class="fas fa-calculator"></i></span>
                 <p>&nbsp;</p>
-                <img src="img/calculator.svg" height="50" width="" alt="scientific calculator"/>
+                <img class="bounce2" src="img/calculator.svg" height="50" width="" alt="scientific calculator"/>
                 <h4 class="widget-heading">Life Insurance Calculator</h4>
                 <p>Our calculator will help work out how much life insurance you might need in just a few minutes, based on what you'll want to leave for your family, or the balance of your mortgage or other debts.&nbsp;</p>
                 <div class="button-container"> <a href="https://www.canadalife.co.uk/group-insurance/insurance-calculators/life-insurance-calculator" target="_blank" class="btn btn-large btn-primary"> Estimate your cover <i class="fa fa-angle-right" aria-hidden="true"></i> </a> </div>
@@ -547,6 +548,15 @@
         </div>
           
         <div id="adviser" class="tab-pane fade">
+			<!-- Trigger/Open The Modal -->
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+		  <!-- Modal content -->
+		  <div class="modal-content">
+			<span class="close">&times;</span>
+			<p>Some text in the Modal..</p>
+		  </div>
+		</div>
           <div class="intro-container">
             <h4>Whether you’re experienced or just about to dip your toe into the employee benefits and financial protection market, you’ll find everything you’ll need here.</h4>
           </div>
@@ -850,5 +860,30 @@
   </div>
   <p class="small mt-3"> © 2019 Canada Life UK </p>
 </footer>
+		<script>
+	// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// When the user clicks the tab, open the modal
+var adviserTab = document.getElementById("adviserTab");
+adviserTab.onclick = function() {
+  modal.style.display = "block";
+}
+</script>
 </body>
 </html>
